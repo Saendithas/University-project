@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="675px" height="675px" viewBox="0 0 675 675" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>9_thousand_eyes</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="9_thousand_eyes" sketch:type="MSArtboardGroup">
+            <g sketch:type="MSLayerGroup" transform="translate(39.500000, 204.000000)" id="Group">
+                <g sketch:type="MSShapeGroup">
+                    <path d="M336.316,247.078 L447.926,136.693 L334.963,25.149" id="Shape" stroke="#020202" stroke-width="2"></path>
+                    <path d="M298.628,224.806 L595.568,48.591" id="Shape" stroke="#020202" stroke-width="2"></path>
+                    <path d="M216.182,0 L513.121,176.214" id="Shape" stroke="#020202" stroke-width="2"></path>
+                    <path d="M260.212,26.188 L148.205,136.705 L261.166,248.251" id="Shape" stroke="#020202" stroke-width="2"></path>
+                    <path d="M297.502,48.591 L0.563,224.806" id="Shape" stroke="#020202" stroke-width="2"></path>
+                    <path d="M370.613,267.548 L73.673,91.333" id="Shape" stroke="#020202" stroke-width="2"></path>
+                    <circle id="Oval" stroke="#020202" stroke-width="2" cx="298.065" cy="135.246" r="21.371"></circle>
+                    <circle id="Oval" fill="#020202" cx="298.066" cy="135.246" r="11.248"></circle>
+                    <path d="M150.344,136.371 L276.32,136.371" id="Shape" stroke="#020202" stroke-width="2"></path>
+                    <path d="M320.186,136.371 L446.161,136.371" id="Shape" stroke="#020202" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

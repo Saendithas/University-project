@@ -1,0 +1,297 @@
+#content {
+    font-family: 'Cinzel', serif;
+}
+
+#temi {
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    /*border: solid 1px;*/
+}
+
+#temi h1 {
+    font-size: 1.5em;
+}
+
+#selezione {
+    margin: auto;
+    margin-top: 5%;
+    overflow: hidden;
+    /*border: solid 1px;*/
+}
+
+.button {
+    z-index: 10;
+}
+
+.button img {
+    width: 5%;
+}
+
+#button_left {
+    margin-left: 40%;
+    float: left;
+    width: 10%;
+    height: 150%;
+}
+
+#button_right {
+    margin-right: 40%;
+    float: right;
+    width: 10%;
+    height: 100%;
+}
+
+.freccia {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    cursor: pointer;
+}
+
+#freccia_destra {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#freccia_sinistra {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#simbolo {
+    margin: auto;
+    margin-bottom: 1%;
+    padding: 0;
+    /*border: solid 1px;*/
+    text-align: center;
+    overflow: hidden;
+}
+
+.simboli {
+    position: relative;
+}
+
+#descrizione {
+    width: 80%;
+    height: 45%;
+    margin: auto;
+    margin-top: 10%;
+    /*border: solid 1px;*/
+    opacity: 0;
+    text-align: center;
+}
+
+#simbolo li {
+    font-size: 200%;
+    margin: auto;
+    list-style-type: none;
+    position: relative;
+}
+
+
+/*Menù*/
+
+#hamburger {
+    width: 100%;
+    /*70px;*/
+    height: 10%;
+    /*70px;*/
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    left: 0%;
+    top: 0%;
+    background-color: transparent;
+    cursor: pointer;
+    /*border: 1px solid white;*/
+    border-radius: 3.125em;
+}
+
+#aprimenu {
+    float: right;
+    margin-right: 2%;
+    transition: 0.5s;
+}
+
+#aprimenu:hover {
+    opacity: 0.2;
+}
+
+.linea {
+    stroke: black;
+    stroke-width: 3;
+}
+
+#menu {
+    position: absolute;
+    margin: auto;
+    height: 0%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 11;
+    font-family: 'Cinzel', serif;
+    background-color: #111;
+    transition: 1.5s;
+    overflow-y: hidden;
+}
+
+.menu_open {
+    animation-name: aprimenu;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#menu ul {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    margin-top: 5%;
+    list-style: none;
+    text-align: center;
+}
+
+#menu li {
+    margin: auto;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+}
+
+#menu ul::before {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 110px;
+    width: 1px;
+    background-color: lightgrey;
+}
+
+#menu ul::after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-bottom: 1%;
+    height: 110px;
+    width: 1px;
+    background-color: lightgrey;
+}
+
+.pulsmenu {
+    margin-top: 5%;
+    position: relative;
+    font-size: 3.5em;
+    color: white;
+}
+
+#chiudimenu {
+    color: white;
+    position: relative;
+    float: right;
+    width: 10%;
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    z-index: 12;
+}
+
+@media (max-width: 700px) {
+    header {
+        margin-top: 30%;
+    }
+    #cave_img {
+        margin-top: 20%;
+        width: 40%;
+        height: 40%;
+    }
+    #intro {
+        margin-top: 30%;
+    }
+    #aprimenu {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    #menu {
+        font-size: 0.5em;
+    }
+    #chiudimenu {
+        font-size: 7em;
+    }
+}
+
+/*Fine menù*/
+
+
+.in_view {
+    display: inline;
+}
+
+.not_view {
+    display: none;
+}
+
+.dissolv {
+    animation: dissolv 1s ease-in forwards;
+}
+
+@keyframes aprimenu {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes dissolv {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes destra_centro {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes centro_destra {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes sinistra_centro {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes centro_sinistra {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -100%;
+    }
+}
