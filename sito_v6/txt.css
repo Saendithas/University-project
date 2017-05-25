@@ -79,6 +79,106 @@ header > h2{
 img {
     max-width: 100%;
 }
+/*menu************************************/
+
+#hamburger{
+	width:100%;                /*70px;*/
+	height:10%;               /*70px;*/
+	position:absolute;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+	left:0%;
+	top:0%;
+	background-color:transparent;
+	cursor:pointer;                     /*border: 1px solid white;*/
+	border-radius:3.125em;
+		
+}
+
+#aprimenu{
+    float: right;
+    height: 6%;
+    width: 6%;
+    margin-right: 2%;
+    transition:0.5s;
+}
+#aprimenu:hover{
+    opacity: 0.2;
+}
+.linea{
+	stroke:white;
+	stroke-width:3;
+}
+#menu {
+    position: absolute;
+    margin: auto;
+    height: 0%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 11;
+    font-family: 'Cinzel', serif;
+    background-color: #111;   
+    transition: 1.5s;
+    overflow-y: hidden;
+}
+.menu_open{
+     animation-name: aprimenu;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+#menu ul{
+    position: relative;
+    margin: auto;
+    padding: 0;
+    margin-top: 5%;
+    list-style: none;
+    text-align: center;
+}
+#menu li{
+    margin: auto;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+}
+#menu ul::before{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 110px;
+    width: 1px;
+    background-color: lightgrey;
+}
+#menu ul::after{
+    content: "";
+    display: block;
+    margin: auto;
+    margin-bottom: 1%;
+    height: 110px;
+    width: 1px;
+    background-color: lightgrey;
+}
+.pulsmenu{
+    margin-top: 5%;
+    position: relative;
+    font-size: 3.5em;
+    color: white;
+}
+#chiudimenu{
+    color: white;
+    position: relative;
+    float: right;
+    width: 10%;
+    font-size: 4em;
+    text-align: center;
+    margin:auto;
+    cursor: pointer;
+    z-index: 12;
+}
 /*preambolo********************************/
 #preambolo{
     font-family: 'Playfair Display', serif;
@@ -117,10 +217,13 @@ img {
     cursor: pointer;
 }
 #preambolo_testo{
+    position: relative;
     border: solid 1px white;
     padding: 3% 3% 3% 3%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    z-index: 10;
 }
 .preambolo_chiuso{
     display: none;
@@ -295,7 +398,7 @@ img {
 
 #sez_3_divSecondo{
     clear: both;
-    padding-top: 50%;
+    padding-top: 80%;
 }
 #sez_3_divSecondo :last-child{
     padding-top: 20%;
@@ -462,9 +565,13 @@ img {
         padding-top: 50%;
         padding-bottom: 50%;
     }
+    #aprimenu{
+        height: 10%;
+        width: 20%;
+    }
     #preambolo{
-        top: 6%;
-        font-size: 100%;
+        top: 1%;
+        font-size: 1.5em;
     }
     .dialogo{
         
@@ -488,7 +595,14 @@ img {
         left: 0%;
     }
 }
-
+@keyframes aprimenu {
+    0% {
+        height: 0%;
+}
+    100%{
+        height: 100%;
+    }
+}
 /*media*//*
 @media (max-width: 700px) {
     body{
