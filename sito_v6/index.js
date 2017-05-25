@@ -3,8 +3,8 @@ function titoli(){
     var nodoomega = document.getElementById("cave_img");
     var nodoselect = document.getElementById("intro");
     titleIn(nodotitoli,1000,0);
-    omegaIn(nodoomega,3000);
-    textIn(nodoselect,6000);
+    //omegaIn(nodoomega,3000);
+    textIn(nodoselect,3000);
 }
 
 function titleIn(nodo,tempo,indice){
