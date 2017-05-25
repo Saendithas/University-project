@@ -1,6 +1,10 @@
-function preambolo_open() {
-    var testo = document.getElementById("preambolo_testo")
-    testo.classList.toggle("preambolo_aperto");
+function menu_open(){
+    var menu = document.getElementById("menu")
+    menu.classList.add("menu_open")
+}
+function menu_close(){
+    var menu = document.getElementById("menu");
+    menu.classList.remove("menu_open")
 }
 
 function FadeIn(nodo,tempo,indice){
@@ -122,10 +126,21 @@ function settore_5(scroll){
 }
 
 function inizializza() {
-    var apripreambolo = document.getElementById("preambolo_apri");
-    apripreambolo.onclick = preambolo_open;
+    var aprimenu = document.getElementById("aprimenu")
+    aprimenu.onclick = menu_open;
+    var chiudi = document.getElementById("chiudimenu")
+    chiudimenu.onclick = menu_close;
+    //var apripreambolo = document.getElementById("preambolo_apri");
+   // apripreambolo.onclick = preambolo_open;
     var nodocontainer = document.body;
     nodocontainer.onscroll = gestorescroll;
 }
 
 window.onload = inizializza;
+
+/*
+function preambolo_open() {
+    var testo = document.getElementById("preambolo_testo")
+    testo.classList.toggle("preambolo_aperto");
+}
+*/
